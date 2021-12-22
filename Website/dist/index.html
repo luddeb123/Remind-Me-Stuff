@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase 9</title>
+    <style>
+        .datavaluetable {
+            width: 100%;
+            display: table;
+        }
+
+        .datavaluerow {
+            display: table-row;
+        }
+
+        .datavalueleft {
+            width: 100px;
+            display: table-cell;
+        }
+
+        .datavalueright {
+            display: table-cell;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Current temperatures</h1>
+
+    <h2>Bedroom</h2>
+
+    <div class="datavaluetable">
+        <div class="datavaluerow">
+            <div class="datavalueleft">
+                <label for="temp">Temp:</label>
+            </div>
+            <div class="datavalueright">
+                <p id="temp"></p>
+            </div>
+        </div>
+
+        <div class="datavaluerow">
+            <div class="datavalueleft">
+                <label for="humidity">Humidity:</label>
+            </div>
+            <div class="datavalueright">
+                <p id="humidity"></p>
+            </div>
+        </div>
+
+        <div class="datavaluerow">
+            <div class="datavalueleft">
+                <label for="status">Status:</label>
+            </div>
+            <div class="datavalueright">
+                <p id="status"></p>
+            </div>
+        </div>
+
+    </div>
+    <button id="demo" style="margin-top: 50px;">Fetch Image</button>
+    <img style="float: right; width: 500px; height: 500; overflow: hidden;"
+        src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" id="imageId"
+        alt="Nothing yet, click Fetch Image to fetch the image">
+    <script src="bundle.js"></script>
+</body>
+
+</html>
